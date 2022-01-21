@@ -1,4 +1,4 @@
-# Sims 4 Toolkit - Hasing (@s4tk/hashing)
+# Sims 4 Toolkit - Hashing (@s4tk/hashing)
 
 ## Overview
 
