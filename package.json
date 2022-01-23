@@ -1,6 +1,6 @@
 {
   "name": "@s4tk/hashing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "hashing.js",
   "repository": {
     "type": "git",
