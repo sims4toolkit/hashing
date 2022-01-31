@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sims4toolkit/misc/main/json-schemas/docs-item-schema.json",
+  "imports": [
+    "import { formatStringKey } from \"@s4tk/hashing/formatting\"; // ESM",
+    "const { formatStringKey } = require(\"@s4tk/hashing/formatting\"); // CJS"
+  ],
+  "header": {
+    "title": {
+      "name": "Formatting a String's Key"
+    },
+    "description": "Helper function for formatting a localized string's key.",
+    "repoUrl": "https://github.com/sims4toolkit/hashing/blob/main/src/formatting.ts"
+  },
+  "sections": [
+    {
+      "content": [
+        {
+          "displayType": "function",
+          "name": "formatStringKey",
+          "description": "Formats the given number as a hex string with 8 digits and a '0x' prefix. Throws if the number is not a positive 32-bit integer.",
+          "arguments": [
+            {
+              "name": "key",
+              "description": "Number to format.",
+              "type": {
+                "name": "number"
+              }
+            }
+          ],
+          "returnType": {
+            "name": "string"
+          },
+          "examples": [
+            {
+              "code": "const output = formatStringKey(4191063435);\n// output = \"0xF9CE8D8B\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

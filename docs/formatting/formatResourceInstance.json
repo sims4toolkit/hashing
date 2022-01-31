@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sims4toolkit/misc/main/json-schemas/docs-item-schema.json",
+  "imports": [
+    "import { formatResourceInstance } from \"@s4tk/hashing/formatting\"; // ESM",
+    "const { formatResourceInstance } = require(\"@s4tk/hashing/formatting\"); // CJS"
+  ],
+  "header": {
+    "title": {
+      "name": "Formatting a Resource's Instance"
+    },
+    "description": "Helper function for formatting the instance value of a resource's key.",
+    "repoUrl": "https://github.com/sims4toolkit/hashing/blob/main/src/formatting.ts"
+  },
+  "sections": [
+    {
+      "content": [
+        {
+          "displayType": "function",
+          "name": "formatResourceInstance",
+          "description": "Formats the given number as a hex string with 16 digits and no '0x' prefix. Throws if the number is not a positive 64-bit integer.",
+          "arguments": [
+            {
+              "name": "value",
+              "description": "Number to format.",
+              "type": {
+                "name": "bigint"
+              }
+            }
+          ],
+          "returnType": {
+            "name": "string"
+          },
+          "examples": [
+            {
+              "code": "const output = formatResourceInstance(14355423604137350667n);\n// output = \"C738B5B5ACDD560B\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

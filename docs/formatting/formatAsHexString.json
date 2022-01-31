@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sims4toolkit/misc/main/json-schemas/docs-item-schema.json",
+  "imports": [
+    "import { formatAsHexString } from \"@s4tk/hashing/formatting\"; // ESM",
+    "const { formatAsHexString } = require(\"@s4tk/hashing/formatting\"); // CJS"
+  ],
+  "header": {
+    "title": {
+      "name": "Formatting Number as Hex Strings"
+    },
+    "description": "Helper function for formatting a number as a hex string.",
+    "repoUrl": "https://github.com/sims4toolkit/hashing/blob/main/src/formatting.ts"
+  },
+  "sections": [
+    {
+      "content": [
+        {
+          "displayType": "function",
+          "name": "formatAsHexString",
+          "description": "Formats the given number as a hex string.",
+          "arguments": [
+            {
+              "name": "value",
+              "description": "Number to format.",
+              "type": {
+                "name": "number | bigint"
+              }
+            },
+            {
+              "name": "digits",
+              "description": "Number of hex digits to guarantee in the output.",
+              "type": {
+                "name": "number"
+              }
+            },
+            {
+              "name": "usePrefix",
+              "description": "Whether or not to prefix the output with '0x'. False by default.",
+              "optional": true,
+              "type": {
+                "name": "boolean"
+              }
+            }
+          ],
+          "returnType": {
+            "name": "string"
+          },
+          "examples": [
+            {
+              "code": "const output = formatAsHexString(1234, 4, true);\n// output = \"0x04D2\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

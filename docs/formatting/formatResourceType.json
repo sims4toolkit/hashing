@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sims4toolkit/misc/main/json-schemas/docs-item-schema.json",
+  "imports": [
+    "import { formatResourceType } from \"@s4tk/hashing/formatting\"; // ESM",
+    "const { formatResourceType } = require(\"@s4tk/hashing/formatting\"); // CJS"
+  ],
+  "header": {
+    "title": {
+      "name": "Formatting a Resource's Type"
+    },
+    "description": "Helper function for formatting the type value of a resource's key.",
+    "repoUrl": "https://github.com/sims4toolkit/hashing/blob/main/src/formatting.ts"
+  },
+  "sections": [
+    {
+      "content": [
+        {
+          "displayType": "function",
+          "name": "formatResourceType",
+          "description": "Formats the given number as a hex string with 8 digits and no '0x' prefix. Throws if the number is not a positive 32-bit integer..",
+          "arguments": [
+            {
+              "name": "value",
+              "description": "Number to format.",
+              "type": {
+                "name": "number"
+              }
+            }
+          ],
+          "returnType": {
+            "name": "string"
+          },
+          "examples": [
+            {
+              "code": "const output = formatResourceType(3412057543);\n// output = \"CB5FDDC7\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
