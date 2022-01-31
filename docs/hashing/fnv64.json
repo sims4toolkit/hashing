@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sims4toolkit/misc/main/json-schemas/docs-item-schema.json",
+  "imports": [
+    "import { fnv64 } from \"@s4tk/hashing\"; // ESM",
+    "const { fnv64 } = require(\"@s4tk/hashing\"); // CJS"
+  ],
+  "header": {
+    "title": {
+      "name": "64-bit FNV Hash"
+    },
+    "description": "Helper function for generating an FNV-64 hash for a string",
+    "repoUrl": "https://github.com/sims4toolkit/hashing/blob/main/src/hashing.ts"
+  },
+  "sections": [
+    {
+      "content": [
+        {
+          "displayType": "function",
+          "name": "fnv64",
+          "description": "Hashes the given string using FNV-64.",
+          "arguments": [
+            {
+              "name": "value",
+              "description": "String to hash.",
+              "type": {
+                "name": "string"
+              }
+            }
+          ],
+          "returnType": {
+            "name": "bigint"
+          }
+        }
+      ]
+    }
+  ]
+}

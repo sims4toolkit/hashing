@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sims4toolkit/misc/main/json-schemas/docs-item-schema.json",
+  "imports": [
+    "import { fnv32to24 } from \"@s4tk/hashing\"; // ESM",
+    "const { fnv32to24 } = require(\"@s4tk/hashing\"); // CJS"
+  ],
+  "header": {
+    "title": {
+      "name": "32-bit to 24-bit Hash Conversion"
+    },
+    "description": "Helper function for converting a 32-bit hash into a 24-bit one.",
+    "repoUrl": "https://github.com/sims4toolkit/hashing/blob/main/src/hashing.ts"
+  },
+  "sections": [
+    {
+      "content": [
+        {
+          "displayType": "function",
+          "name": "fnv32to24",
+          "description": "Converts the given 32-bit hash into a 24-bit one.",
+          "arguments": [
+            {
+              "name": "hash",
+              "description": "Value to convert.",
+              "type": {
+                "name": "number"
+              }
+            }
+          ],
+          "returnType": {
+            "name": "number"
+          }
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "seeAlso": [
+      {
+        "name": "fnv24",
+        "path": {
+          "pkg": "hashing",
+          "group": "hashing",
+          "item": "fnv24"
+        }
+      },
+      {
+        "name": "fnv32",
+        "path": {
+          "pkg": "hashing",
+          "group": "hashing",
+          "item": "fnv32"
+        }
+      }
+    ]
+  }
+}

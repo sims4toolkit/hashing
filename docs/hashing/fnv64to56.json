@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sims4toolkit/misc/main/json-schemas/docs-item-schema.json",
+  "imports": [
+    "import { fnv64to56 } from \"@s4tk/hashing\"; // ESM",
+    "const { fnv64to56 } = require(\"@s4tk/hashing\"); // CJS"
+  ],
+  "header": {
+    "title": {
+      "name": "64-bit to 56-bit Hash Conversion"
+    },
+    "description": "Helper function for converting a 64-bit hash into a 56-bit one.",
+    "repoUrl": "https://github.com/sims4toolkit/hashing/blob/main/src/hashing.ts"
+  },
+  "sections": [
+    {
+      "content": [
+        {
+          "displayType": "function",
+          "name": "fnv64to56",
+          "description": "Converts the given 64-bit hash into a 56-bit one.",
+          "arguments": [
+            {
+              "name": "hash",
+              "description": "Value to convert.",
+              "type": {
+                "name": "bigint"
+              }
+            }
+          ],
+          "returnType": {
+            "name": "bigint"
+          }
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "seeAlso": [
+      {
+        "name": "fnv56",
+        "path": {
+          "pkg": "hashing",
+          "group": "hashing",
+          "item": "fnv56"
+        }
+      },
+      {
+        "name": "fnv64",
+        "path": {
+          "pkg": "hashing",
+          "group": "hashing",
+          "item": "fnv64"
+        }
+      }
+    ]
+  }
+}

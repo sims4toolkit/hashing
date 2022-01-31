@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sims4toolkit/misc/main/json-schemas/docs-index-schema.json",
+  "versions": [
+    "0.1.1"
+  ],
+  "groups": [
+    {
+      "name": "hashing",
+      "items": [
+        "fnv24",
+        "fnv32",
+        "fnv32to24",
+        "fnv56",
+        "fnv64",
+        "fnv64to56"
+      ]
+    },
+    {
+      "name": "formatting",
+      "items": [
+        "formatAsHexString",
+        "formatResourceGroup",
+        "formatResourceInstance",
+        "formatResourceKey",
+        "formatResourceType",
+        "formatStringKey"
+      ]
+    }
+  ]
+}
