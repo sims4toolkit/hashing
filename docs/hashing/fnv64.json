@@ -8,7 +8,7 @@
     "title": {
       "name": "64-bit FNV Hash"
     },
-    "description": "Helper function for generating an FNV-64 hash for a string",
+    "description": "Helper function for generating an FNV-64 hash for a string.",
     "repoUrl": "https://github.com/sims4toolkit/hashing/blob/main/src/hashing.ts"
   },
   "sections": [
