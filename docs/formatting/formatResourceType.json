@@ -9,7 +9,7 @@
       "name": "Formatting a Resource's Type"
     },
     "description": "Helper function for formatting the type value of a resource's key.",
-    "repoUrl": "https://github.com/sims4toolkit/hashing/blob/main/src/formatting.ts"
+    "sourceCode": "src/formatting.ts"
   },
   "sections": [
     {

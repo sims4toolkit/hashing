@@ -9,7 +9,7 @@
       "name": "Formatting a String's Key"
     },
     "description": "Helper function for formatting a localized string's key.",
-    "repoUrl": "https://github.com/sims4toolkit/hashing/blob/main/src/formatting.ts"
+    "sourceCode": "src/formatting.ts"
   },
   "sections": [
     {

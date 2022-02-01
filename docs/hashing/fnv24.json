@@ -10,7 +10,7 @@
       "prefix": "function"
     },
     "description": "Helper function for generating an FNV-24 hash for a string.",
-    "repoUrl": "https://github.com/sims4toolkit/hashing/blob/main/src/hashing.ts"
+    "sourceCode": "src/hashing.ts"
   },
   "sections": [
     {

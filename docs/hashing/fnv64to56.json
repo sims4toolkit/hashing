@@ -9,7 +9,7 @@
       "name": "64-bit to 56-bit Hash Conversion"
     },
     "description": "Helper function for converting a 64-bit hash into a 56-bit one.",
-    "repoUrl": "https://github.com/sims4toolkit/hashing/blob/main/src/hashing.ts"
+    "sourceCode": "src/hashing.ts"
   },
   "sections": [
     {

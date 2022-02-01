@@ -9,7 +9,7 @@
       "name": "Formatting Number as Hex Strings"
     },
     "description": "Helper function for formatting a number as a hex string.",
-    "repoUrl": "https://github.com/sims4toolkit/hashing/blob/main/src/formatting.ts"
+    "sourceCode": "src/formatting.ts"
   },
   "sections": [
     {

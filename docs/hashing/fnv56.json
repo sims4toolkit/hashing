@@ -9,7 +9,7 @@
       "name": "56-bit FNV Hash"
     },
     "description": "Helper function for generating an FNV-56 hash for a string.",
-    "repoUrl": "https://github.com/sims4toolkit/hashing/blob/main/src/hashing.ts"
+    "sourceCode": "src/hashing.ts"
   },
   "sections": [
     {
