@@ -6,7 +6,8 @@
   ],
   "header": {
     "title": {
-      "name": "Formatting a Resource's Key"
+      "name": "formatResourceKey()",
+      "prefix": "function"
     },
     "description": "Helper function for formatting a resource's full key.",
     "sourceCode": "src/formatting.ts"

@@ -6,7 +6,8 @@
   ],
   "header": {
     "title": {
-      "name": "Formatting a Resource's Type"
+      "name": "formatResourceType()",
+      "prefix": "function"
     },
     "description": "Helper function for formatting the type value of a resource's key.",
     "sourceCode": "src/formatting.ts"

@@ -6,7 +6,8 @@
   ],
   "header": {
     "title": {
-      "name": "Formatting a String's Key"
+      "name": "formatStringKey()",
+      "prefix": "function"
     },
     "description": "Helper function for formatting a localized string's key.",
     "sourceCode": "src/formatting.ts"

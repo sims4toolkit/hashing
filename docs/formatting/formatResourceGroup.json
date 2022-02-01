@@ -6,7 +6,8 @@
   ],
   "header": {
     "title": {
-      "name": "Formatting a Resource's Group"
+      "name": "formatResourceGroup()",
+      "prefix": "function"
     },
     "description": "Helper function for formatting the group value of a resource's key.",
     "sourceCode": "src/formatting.ts"

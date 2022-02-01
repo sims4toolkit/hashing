@@ -6,7 +6,8 @@
   ],
   "header": {
     "title": {
-      "name": "Formatting Number as Hex Strings"
+      "name": "formatAsHexString()",
+      "prefix": "function"
     },
     "description": "Helper function for formatting a number as a hex string.",
     "sourceCode": "src/formatting.ts"

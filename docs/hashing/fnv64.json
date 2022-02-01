@@ -6,7 +6,8 @@
   ],
   "header": {
     "title": {
-      "name": "64-bit FNV Hash"
+      "name": "fnv64()",
+      "prefix": "function"
     },
     "description": "Helper function for generating an FNV-64 hash for a string.",
     "sourceCode": "src/hashing.ts"

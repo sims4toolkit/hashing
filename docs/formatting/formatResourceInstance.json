@@ -6,7 +6,8 @@
   ],
   "header": {
     "title": {
-      "name": "Formatting a Resource's Instance"
+      "name": "formatResourceInstance()",
+      "prefix": "function"
     },
     "description": "Helper function for formatting the instance value of a resource's key.",
     "sourceCode": "src/formatting.ts"

@@ -6,7 +6,8 @@
   ],
   "header": {
     "title": {
-      "name": "32-bit to 24-bit Hash Conversion"
+      "name": "fnv32to24()",
+      "prefix": "function"
     },
     "description": "Helper function for converting a 32-bit hash into a 24-bit one.",
     "sourceCode": "src/hashing.ts"
