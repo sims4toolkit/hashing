@@ -1,0 +1,77 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sims4toolkit/misc/main/json-schemas/docs-item-schema.json",
+  "imports": [
+    "import { formatResourceTGI } from \"@s4tk/hashing/formatting\"; // ESM",
+    "const { formatResourceTGI } = require(\"@s4tk/hashing/formatting\"); // CJS"
+  ],
+  "header": {
+    "title": {
+      "name": "formatResourceTGI()",
+      "prefix": "function"
+    },
+    "description": "Helper function for formatting the type, group, and instance of a resource.",
+    "sourceCode": "src/formatting.ts"
+  },
+  "sections": [
+    {
+      "content": [
+        {
+          "displayType": "function",
+          "name": "formatResourceTGI",
+          "description": "Formats the given type, group, and instance as a string using the given delimeter. Throws if either the type or group is not a positive 32-bit integer, or if the instance is not a positive 64-bit integer.",
+          "arguments": [
+            {
+              "name": "type",
+              "description": "Type of the key.",
+              "type": {
+                "name": "number"
+              }
+            },
+            {
+              "name": "group",
+              "description": "Group of the key.",
+              "type": {
+                "name": "number"
+              }
+            },
+            {
+              "name": "instance",
+              "description": "Instance of the key.",
+              "type": {
+                "name": "bigint"
+              }
+            },
+            {
+              "name": "delimeter",
+              "optional": true,
+              "description": "Character to separate the hashes with. ':' by default.",
+              "type": {
+                "name": "string"
+              }
+            }
+          ],
+          "returnType": {
+            "name": "string"
+          },
+          "examples": [
+            {
+              "code": "const output = formatResourceTGI(3412057543, 0, 1234567890n, '-');\n// output = \"CB5FDDC7-00000000-00000000499602D2\""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "seeAlso": [
+      {
+        "name": "formatResourceKey",
+        "path": {
+          "pkg": "hashing",
+          "group": "formatting",
+          "item": "formatResourceKey"
+        }
+      }
+    ]
+  }
+}

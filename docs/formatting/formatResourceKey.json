@@ -18,27 +18,18 @@
         {
           "displayType": "function",
           "name": "formatResourceKey",
-          "description": "Formats the given type, group, and instance as a string using the given delimeter. Throws if either the type or group is not a positive 32-bit integer, or if the instance is not a positive 64-bit integer.",
+          "description": "Formats the given resource key as a string using the given delimeter. Throws if either the type or group is not a positive 32-bit integer, or if the instance is not a positive 64-bit integer.",
           "arguments": [
             {
-              "name": "type",
-              "description": "Type of the key.",
+              "name": "key",
+              "description": "Resource key to format.",
               "type": {
-                "name": "number"
-              }
-            },
-            {
-              "name": "group",
-              "description": "Group of the key.",
-              "type": {
-                "name": "number"
-              }
-            },
-            {
-              "name": "instance",
-              "description": "Instance of the key.",
-              "type": {
-                "name": "bigint"
+                "name": "ResourceKey",
+                "path": {
+                  "pkg": "models",
+                  "group": "types",
+                  "item": "ResourceKey"
+                }
               }
             },
             {
@@ -55,11 +46,23 @@
           },
           "examples": [
             {
-              "code": "const output = formatResourceKey(3412057543, 0, 1234567890n, '-');\n// output = \"CB5FDDC7-00000000-00000000499602D2\""
+              "code": "const key = { type: 0x12345678, group: 0x87654321, instance: 0x1234n };\nconst output = formatResourceKey(key, '-');\n// output = \"12345678-87654321-0000000000001234\""
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "footer": {
+    "seeAlso": [
+      {
+        "name": "formatResourceTGI",
+        "path": {
+          "pkg": "hashing",
+          "group": "formatting",
+          "item": "formatResourceTGI"
+        }
+      }
+    ]
+  }
 }
