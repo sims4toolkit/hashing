@@ -39,15 +39,26 @@ export function formatResourceInstance(value: bigint): string {
 }
 
 /**
- * Formats a resource key using the given delimeter (':' by default).
+ * Formats the type, group, and instance of a resource using the given delimeter
+ * (':' by default). To format a ResourceKey object, use `formatResourceKey`.
  * 
  * @param type Type of key
  * @param group Group of key
  * @param instance Instance of key
  * @param delimeter Character to separate the numbers with
  */
-export function formatResourceKey(type: number, group: number, instance: bigint, delimeter: string = ":"): string {
+export function formatResourceTGI(type: number, group: number, instance: bigint, delimeter: string = ":"): string {
   return `${formatResourceType(type)}${delimeter}${formatResourceGroup(group)}${delimeter}${formatResourceInstance(instance)}`;
+}
+
+/**
+ * Formats a resource key using the given delimeter (':' by default).
+ * 
+ * @param key Resource key to format
+ * @param delimeter Character to separate the numbers with
+ */
+export function formatResourceKey(key: { type: number; group: number; instance: bigint; }, delimeter: string = ":"): string {
+  return formatResourceTGI(key.type, key.group, key.instance, delimeter);
 }
 
 /**

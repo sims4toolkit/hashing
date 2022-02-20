@@ -57,13 +57,25 @@ describe("#formatResourceInstance()", () => {
   });
 });
 
-describe("#formatResourceKey()", () => {
+describe("#formatResourceTGI()", () => {
   it("should format given values with : delimeter", () => {
-    expect(formatting.formatResourceKey(0x12345678, 0x87654321, 0x1234n)).to.equal("12345678:87654321:0000000000001234");
+    expect(formatting.formatResourceTGI(0x12345678, 0x87654321, 0x1234n)).to.equal("12345678:87654321:0000000000001234");
   });
 
   it("should format given values with the given delimeter", () => {
-    expect(formatting.formatResourceKey(0x12345678, 0x87654321, 0x1234n, '-')).to.equal("12345678-87654321-0000000000001234");
+    expect(formatting.formatResourceTGI(0x12345678, 0x87654321, 0x1234n, '-')).to.equal("12345678-87654321-0000000000001234");
+  });
+});
+
+describe("#formatResourceKey()", () => {
+  it("should format given values with : delimeter", () => {
+    const key = { type: 0x12345678, group: 0x87654321, instance: 0x1234n };
+    expect(formatting.formatResourceKey(key)).to.equal("12345678:87654321:0000000000001234");
+  });
+
+  it("should format given values with the given delimeter", () => {
+    const key = { type: 0x12345678, group: 0x87654321, instance: 0x1234n };
+    expect(formatting.formatResourceKey(key, '-')).to.equal("12345678-87654321-0000000000001234");
   });
 });
 
