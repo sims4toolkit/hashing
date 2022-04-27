@@ -1,12 +1,12 @@
 {
   "name": "@s4tk/hashing",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "hashing.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/sims4toolkit/hashing.git"
   },
-  "homepage": "https://github.com/sims4toolkit/hashing#readme",
+  "homepage": "https://sims4toolkit.com/#/docs/hashing",
   "bugs": {
     "url": "https://github.com/sims4toolkit/hashing/issues"
   },
