@@ -9,7 +9,7 @@
       "name": "fnv24()",
       "prefix": "function"
     },
-    "description": "Helper function for generating an FNV-24 hash for a string.",
+    "description": "Helper function for generating an FNV-24 hash for a string. You probably don't need to use this function - check out FNV32.",
     "sourceCode": "src/hashing.ts"
   },
   "sections": [

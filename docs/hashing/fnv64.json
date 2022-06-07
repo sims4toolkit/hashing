@@ -26,6 +26,14 @@
               "type": {
                 "name": "string"
               }
+            },
+            {
+              "name": "highBit",
+              "description": "Whether or not to force the high bit to 1. False by default.",
+              "optional": true,
+              "type": {
+                "name": "boolean"
+              }
             }
           ],
           "returnType": {
